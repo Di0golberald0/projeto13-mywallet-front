@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Button from "../Button";
 import Input from "../Input";
-import { Container, StyledLink } from "../SignStyle";
+import { Title, Container, StyledLink } from "../SignStyle";
 
 export default function CadastroPage() {
   const [data, setData] = useState({
@@ -30,6 +30,7 @@ export default function CadastroPage() {
 
   return (
     <Container>
+      <Title>MyWallet</Title>
       <div>
         <Input
         type="text"

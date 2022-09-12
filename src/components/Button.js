@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-  height: 45px;
-  width: 100%;
-  background-color: ${(props) => typeof props.active !== 'boolean' || props.active ? "#52B6FF" : "#888"};
+  height: 46px;
+  width: 326px;
+  background-color: ${(props) => typeof props.active !== 'boolean' || props.active ? "#A328D6" : "#888"};
   color: #FFFFFF;
-  font-size: 22px;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
   padding: 14px;
-  ${(props) => !props.noMargin && "margin-bottom: 10px;"}
-  border-radius: 4px;
+  border-radius: 5px;
   border: none;
   display: flex;
   align-items: center;
