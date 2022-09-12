@@ -8,16 +8,15 @@ export default function CadastroPage() {
   const [data, setData] = useState({
     name: "",
     email: "",
-    image: "",
-    password: ""
+    password: "",
+    confirm: ""
   });
-
   function handleSignUp() {
 
     const promise = axios.post(
       "",
       {
-        ...data
+        ...data,
       }
     );
 
