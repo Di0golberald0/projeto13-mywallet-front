@@ -12,11 +12,11 @@ export default function LoginPage({ setToken, setUser }) {
 
   function handleSignIn() {
     const promise = axios.post(
-      "",
+      "http://localhost:5000/singin",
     {
-       email: email,
-       password: password
-      }
+      email: email,
+      password: password
+    }
     );
 
     promise.then((response) => {

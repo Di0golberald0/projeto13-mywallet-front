@@ -14,7 +14,7 @@ export default function CadastroPage() {
   function handleSignUp() {
 
     const promise = axios.post(
-      "",
+      "http://localhost:5000/singup",
       {
         ...data,
       }
